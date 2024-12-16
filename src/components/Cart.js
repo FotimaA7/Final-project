@@ -1,44 +1,39 @@
 import React from 'react';
-import { useCart } from '../components/CartContext'; // Ensure correct path
-import '../styles/Cart.css';
+import { useCart } from './CartContext';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
-  const { cartItems, removeFromCart } = useCart(); // Get cart items and remove function
+  const { cartItems, removeFromCart } = useCart();
+  const navigate = useNavigate(); // Hook for navigation
 
-  // Calculate total price
-  const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+  const handleBuyNow = () => {
+    if (cartItems.length > 0) {
+      navigate('/payment'); // Navigate to Payment page
+    } else {
+      alert("Your cart is empty. Add items before proceeding to payment.");
+    }
+  };
 
   return (
-    <div className="cart">
+    <div>
       <h1>Your Cart</h1>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty</p>
+        <p>Your cart is empty.</p>
       ) : (
         <div>
-          <div className="cart-items">
+          <ul>
             {cartItems.map((item) => (
-              <div key={item.id} className="cart-item">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="cart-item-image"
-                />
-                <div className="cart-item-info">
-                  <h2>{item.name}</h2>
-                  <p>Price: ${item.price}</p>
-                  <button
-                    className="remove-from-cart-btn"
-                    onClick={() => removeFromCart(item.id)} // Remove item from cart
-                  >
-                    Remove
-                  </button>
-                </div>
-              </div>
+              <li key={item.id}>
+                <img src={item.image} alt={item.name} style={{ width: '50px' }} />
+                {item.name} - {item.price}
+                <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              </li>
             ))}
-          </div>
-          <div className="cart-summary">
-            <h2>Total: ${totalPrice.toFixed(2)}</h2>
-          </div>
+          </ul>
+          {/* Buy Button */}
+          <button onClick={handleBuyNow} className="buy-now-btn">
+            Buy Now
+          </button>
         </div>
       )}
     </div>

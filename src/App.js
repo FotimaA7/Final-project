@@ -6,9 +6,9 @@ import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import About from './components/About';
-import { CartProvider } from './components/CartContext'; // Wrap your app with CartProvider
-import './i18n'; // Internationalization
-import './styles/App.css'; // App styles
+import Payment from './components/Payment';  // Payment component
+import { CartProvider } from './components/CartContext';
+import './styles/App.css';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path="/products" element={<ProductList />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
+          <Route path="/payment" element={<Payment />} /> {/* Use Payment here */}
         </Routes>
         <Footer />
       </Router>
