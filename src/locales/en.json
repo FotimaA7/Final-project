@@ -1,0 +1,29 @@
+{
+  "home": "Home",
+  "products": "Products",
+  "cart": "Cart",
+  "about": "About Us",
+  "contact": "Contact Us",
+  "welcome_message": "Discover Fashion You'll Love",
+  "greeting_message": "Welcome to BYNANISH Shop, where style meets elegance.",
+  "shop_description": "Shop the latest trends in women's clothing.",
+  "shop_now": "Shop Now",
+  "footer_message": "Choose the latest style.",
+  "language_switcher": "Switch Language",
+  "address": "Address",
+  "phone": "Phone",
+  "clothes": "Our Clothes",
+  "search_placeholder": "Search products...",
+  "add_to_cart": "Add to Cart",
+  "product_names": {
+    "floral_dress": "Floral Dress",
+    "summer_top": "Summer Top",
+    "jeans": "Jeans",
+    "leather_bag": "Leather Bag",
+    "sneakers": "Sneakers",
+    "jacket": "Jacket",
+    "women_bag": "Women Bag",
+    "dress": "Dress",
+    "evening_dress": "Evening Dress"
+  }
+}

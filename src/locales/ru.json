@@ -1,0 +1,30 @@
+{
+    "home": "Главная",
+    "products": "Продукты",
+    "cart": "Корзина",
+    "about": "О нас",
+    "contact": "Контакты",
+    "welcome_message": "Откройте для себя моду, которую вы полюбите",
+    "greeting_message": "Добро пожаловать в BYNANISH Shop, где стиль встречается с элегантностью.",
+    "shop_description": "Покупайте последние тренды в женской одежде.",
+    "shop_now": "Купить сейчас",
+    "footer_message": "© 2024 BYNANISH. Все права защищены.",
+    "language_switcher": "Сменить язык",
+    "address": "Адрес",
+    "phone": "Телефон",
+    "our_products": "Наши Продукты",
+    "search_placeholder": "Искать продукты...",
+    "add_to_cart": "Добавить в корзину",
+    "products_names": {
+      "floral_dress": "Платье с цветами",
+      "summer_top": "Летний топ",
+      "jeans": "Джинсы",
+      "leather_bag": "Кожаная сумка",
+      "sneakers": "Кроссовки",
+      "jacket": "Куртка",
+      "women_bag": "Женская сумка",
+      "dress": "Платье",
+      "evening_dress": "Вечернее платье"
+    }
+  }
+  

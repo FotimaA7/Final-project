@@ -1,0 +1,80 @@
+/* About Section Styling */
+.about-container {
+  padding: 40px;
+  background-color: #f7f7f7;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+.about-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* About Content Layout */
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.about-container h2 {
+  font-size: 2rem;
+  color: #F1C27D;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+/* List Styling */
+.about-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.about-container ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  padding-left: 15px;
+  position: relative;
+}
+
+.about-container ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #F1C27D;
+  font-size: 1.5rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container p,
+  .about-container ul li {
+    font-size: 1rem;
+  }
+}
+  

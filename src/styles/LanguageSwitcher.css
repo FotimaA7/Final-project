@@ -1,0 +1,24 @@
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;  /* Align to the right */
+  }
+  
+  .lang-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .language-switcher img {
+    width: 20px;  /* Adjust the size of the flag icons */
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;  /* Add a smooth transition effect */
+  }
+  
+  .language-switcher img:hover {
+    transform: scale(1.1);  /* Slightly enlarge the icon on hover */
+  }
+  
